@@ -1,0 +1,68 @@
+@import url("https://fonts.google.com/specimen/Spartan");
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: "Spartan",sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+p {
+    font-size: 15px;;
+}
+/* Hero Text */
+.hero {
+    text-align: center;
+}
+.hero h1 {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.hero p {
+    color: hsl(303, 10%, 53%);
+}
+
+/* Stars */
+.star-review {
+    background-color: hsl(300, 24%, 96%);
+    margin: 20px 0;
+    padding: 1em;
+    text-align: center;
+    border-radius: 13px;
+}
+.star-review p {
+    color: hsl(300, 43%, 22%)
+}
+/* User Reviews */
+.review {
+    background-color: hsl(300, 43%, 22%);
+    margin:20px 0;
+    padding: 2em;
+    border-radius: 13px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-pic {
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-text p:first-of-type {
+    color: white;
+}
+.verified {
+    color:hsl(333, 80%, 67%);
+}
+.message {
+    color:hsl(300, 24%, 96%);
+}
