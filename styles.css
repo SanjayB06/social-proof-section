@@ -9,6 +9,7 @@
 .container {
     width: 90%;
     margin: 0 auto;
+    align-self: center;
 }
 p {
     font-size: 15px;;
@@ -18,10 +19,10 @@ p {
     text-align: center;
 }
 .hero h1 {
-    width: 70%;
     margin: 0 auto;
     margin-bottom: 20px;
     font-weight: 700;
+    color:hsl(300, 43%, 22%)    
 }
 .hero p {
     color: hsl(303, 10%, 53%);
@@ -42,7 +43,7 @@ p {
 .review {
     background-color: hsl(300, 43%, 22%);
     margin:20px 0;
-    padding: 2em;
+    padding: 2em 3em;
     border-radius: 13px;
 }
 
@@ -68,15 +69,35 @@ p {
 }
 
 @media (min-width:1000px) {
+    body {
+        background-image: url("images/bg-pattern-bottom-desktop.svg"), url("images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat,no-repeat;
+        background-position: right bottom,left top;
+    }
+    .body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    
     .container {
+        width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "hero hero stars stars"
         "review review review review";
+        grid-gap: 40px;
     }
     .hero {
         grid-area: hero;
+        text-align: left;
+    }
+    .hero-text {
+        width: 80%;
+    }
+    .hero h1 {
+        font-size: 50px
     }
     .stars {
         grid-area: stars;
@@ -103,5 +124,12 @@ p {
     }
     .review {
         margin: 20px;
+        position: relative;
+    }
+    .review:nth-child(2){
+        top:20px
+    }
+    .review:nth-child(3) {
+        top: 40px;
     }
 }
