@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://app.netlify.com/sites/social-proof-section-smb)
+- [Live Site URL](https://social-proof-section-smb.netlify.app/)
 
 ## My process
 
